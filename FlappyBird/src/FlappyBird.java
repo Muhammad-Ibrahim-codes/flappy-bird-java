@@ -168,10 +168,10 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
     }
 
     boolean collision(Bird a, Pipe b) {
-        return a.x < b.x + b.width && // a's top left corner doesn't reach b's top right corner
-                a.x + a.width > b.x && // a's top right corner passes b's top left corner
-                a.y < b.y + b.height && // a's top left corner doesn't reach b's bottom left corner
-                a.y + a.height > b.y; // a's bottom left corner passes b's top left corner
+        return a.x < b.x + b.width && // bird’s left edge is before pipe’s right edge
+                a.x + a.width > b.x && // bird’s right edge is after pipe’s left edge
+                a.y < b.y + b.height && // bird’s top is above pipe’s bottom
+                a.y + a.height > b.y; // bird’s bottom is below pipe’s top
     }
 
     @Override
