@@ -1,5 +1,4 @@
-**Muhammad Ibrahim** – 24PWBCS1240  
-**Ahsan Shaheer** – 24PWBCS1201
+**Muhammad Ibrahim** – 24PWBCS1240
 
 ---
 
